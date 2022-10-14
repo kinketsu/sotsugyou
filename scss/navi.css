@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.navi {
+  display: flex;
+}
+
+@media screen and (max-width: 786px) {
+  .navi-hamburger {
+    background-color: transparent; /*透明の背景*/
+    position: relative; /*ハンバーガーの横線の位置を決めるための基準*/
+    cursor: pointer; /*リンクを示すカーソルを表示（指差しマーク）*/
+    margin: 0 0 0 auto; /*左側に余白を作り、ハンバーガーメニューを右端に配置*/
+    height: 60px; /*ヘッダーの高さと同じ60px*/
+    width: 60px; /*高さと同じ幅*/
+  }
+  .icon span {
+    position: absolute; /*親要素である#hamburgerを基準に位置を指定*/
+    left: 15px; /*#hamburger内の左がら15pxに横線を配置（幅が60pxなので右からも15px）*/
+    width: 30px; /*横線の幅が30px*/
+    height: 4px; /*横線の高さが4px*/
+    background-color: white; /*横線を白色*/
+    border-radius: 8px; /*横線の両端の角に丸みを持たせる*/
+    transition: ease 0.75s; /*変化の時間（easeは初期値）*/
+  }
+  .icon span:nth-of-type(1) {
+    top: 16px;
+  }
+  .icon span:nth-of-type(2) {
+    top: 28px;
+  }
+  .icon span:nth-of-type(3) {
+    bottom: 16px;
+  }
+  .close span:nth-of-type(1) {
+    transform: rotate(45deg); /*反時計回りに45度回転*/
+    top: 28px;
+  }
+  .close span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .close span:nth-of-type(3) {
+    transform: rotate(-45deg); /*時計回りに45度回転*/
+    top: 28px;
+  }
+}/*# sourceMappingURL=navi.css.map */
