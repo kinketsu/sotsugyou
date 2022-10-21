@@ -1,4 +1,5 @@
 {
+  // css
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.formats": [
     {
