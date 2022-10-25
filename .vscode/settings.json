@@ -8,8 +8,8 @@
       "savePath": "/css",
     },
   ],
-  "liveSassCompile.settings.autoprefix": [
-    "> 3% in JP",
-    "last 2 versions"
-  ],
+  // "liveSassCompile.settings.autoprefix": [
+  //   "> 3% in JP",
+  //   "last 2 versions"
+  // ],
 }
