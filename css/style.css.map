@@ -1,1 +1,3 @@
-{"version":3,"sources":["../sass/_main.scss","../sass/_navi.scss"],"names":[],"mappings":"AAAA,GACI,4BAAA,CACA,SAAA,CAGJ,KAAA,sBAAA,CCLA,MACE,YAAA","file":"style.css"}
+
+{"version":3,"sources":["style.css","../sass/_main.scss","../sass/_navi.scss"],"names":[],"mappings":"AAAA,GCAA,2BACI,CAAA,SACA,CAAA,qDACA,CAAA,KAGJ,qBAAA,CAAA,MCNA,YACE","file":"style.css"}
+
