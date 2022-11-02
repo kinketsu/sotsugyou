@@ -1,6 +1,6 @@
 {
   // css
-  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.formats": [
     {
       "format": "compressed",
