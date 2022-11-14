@@ -5,6 +5,12 @@
     <title>卒業制作</title>
     
     <link rel="stylesheet" href="../css/style.css">
+    <script>
+  function inputBtn() {
+    const inputPrice = document.getElementById("inputPrice");
+    document.getElementById("viewPrice").textContent = inputPrice.value;
+  }
+    </script>
 </head>
 <body>
     <header>
@@ -38,21 +44,21 @@
         <h2>買い物計算機</h2>
         <section class="container">
             <!--修正-->
-            <div>
+            <div id="viewAllPrice" >
                 <span>5000</span>
             </div>
             <div>
-                <input type="text">
-                <button>結果</button>
+                <input type="text" value="" id="inputPrice">
+                <input type="button" value="入力" onclick="inputBtn()">
             </div>
             <div>
-                <select name="example" id="">
+                <select name="example" id="pText">
                     <option value="0">0%</option>
                     <option value="8">8%</option>
                     <option value="10">10%</option>
                 </select>
             </div>
-            <table>
+            <table id="viewPrice">
                 <ul>
                     <tr>
                         <td>2000</td>
