@@ -6,10 +6,7 @@
     
     <link rel="stylesheet" href="../css/style.css">
     <script>
-  function inputBtn() {
-    const inputPrice = document.getElementById("inputPrice");
-    document.getElementById("viewPrice").textContent = inputPrice.value;
-  }
+
     </script>
 </head>
 <body>
@@ -35,7 +32,7 @@
                 <div><a href="/icon/icon_container.html">アイコンコンテイナー</a></div>
                 <!-- <div><a href="/create_icon_price.html">アイコン金額設定</a></div> -->
                 <!-- 李 -->
-                <div><a href="/calculation/price_input.html">買い物計算機</a></div>
+                <div><a href="/calculation/calculation.html">買い物計算機</a></div>
             </nav>
         </div>
         <!-- ナビボタン追加 -->
@@ -48,7 +45,7 @@
                 <span>5000</span>
             </div>
             <div>
-                <input type="text" value="" id="inputPrice">
+                <input type="number" value="" id="inputPrice">
                 <input type="button" value="入力" onclick="inputBtn()">
             </div>
             <div>
@@ -59,7 +56,7 @@
                 </select>
             </div>
             <table id="viewPrice">
-                <ul>
+                <tbody>
                     <tr>
                         <td>2000</td>
                         <td><button>削除</button></td>
@@ -72,7 +69,7 @@
                         <td>2000</td>
                         <td><button>削除</button></td>
                     </tr>
-                </ul>
+                </tbody>
             </table>
             <!--修正-->
         </section>
