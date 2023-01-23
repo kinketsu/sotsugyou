@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <title>卒業制作</title>
     
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="js/calculation.js">
+
+    </script>
 </head>
 <body>
     <header>
         <h1>金欠防止</h1>
         <div class="navi-hamburger">
             <div class="icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div></div>
         <!-- ナビボタン追加 -->
         <div>
             <nav class="navi" >
@@ -36,37 +39,40 @@
         <!-- ナビボタン追加 -->
     </header>
 
-    <h2>sample</h2>
+        <h2>買い物計算機</h2>
         <section class="container">
             <!--修正-->
+            <div id="viewAllPrice" >
+                <span>5000</span>
+            </div>
             <div>
-                <label>収支</label>
-                <input type="radio" value="支出" checked>支出
-                <input type="radio" value="収入">収入
-                <label>日付</label>
-                <input type="date">
-                <label>カテゴリ</label>
-
-                <select>
-                    <option>-選択してください-</option>
-                    <option>食費</option>
-                    <option>趣味</option>
-                    <option>交際費</option>
-                    <option>交通費</option>
-                    <option>ファッション</option>
-                    <option>クルマ</option>
-                    <option>家賃</option>
-                    <option>保険</option>
-                    <option>税金</option>
-                    <option>その他</option>
+                <input type="number" value="" id="inputPrice">
+                <select name="example" id="pText">
+                    <option value="0">0%</option>
+                    <option value="8">8%</option>
+                    <option value="10">10%</option>
                 </select>
+                <input type="button" value="入力" onclick="inputBtn()">
             </div>
             <div>
-                <label>金額</label>
-                <input type="number" placeholder="金額を記入">円
-                <label>メモ</label>
-                <input type="text" placeholder="買ったものを記入">
+                
             </div>
+            <table id="viewPrice">
+                <tbody>
+                    <tr>
+                        <td>2000</td>
+                        <td><button>削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>1000</td>
+                        <td><button>削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>2000</td>
+                        <td><button>削除</button></td>
+                    </tr>
+                </tbody>
+            </table>
             <!--修正-->
         </section>
 
@@ -78,6 +84,6 @@
     </footer>
 </body>
 
-<script src="/js/common.js" defer="defer"></script>
-<script src=".vscode/settings.json" defer="defer"></script>
+<script src="/js/common.js"></script>
+
 </html>
