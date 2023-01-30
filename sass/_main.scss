@@ -2,9 +2,13 @@ h1 {
     border-bottom: solid 4px red;
     color: red;
     font-family: "UD デジタル 教科書体 N-B","UD Digi Kyokasho N-B";
-}
+    margin: 0;
+    padding: 0;
+  }
 
-body{background-color: white;
+body{
+  margin: 0;
+  background-color: white;
 }
 
 /*　アイコン　*/
@@ -74,3 +78,4 @@ input[type="text"] {
     color: #fff;
     background-color: dodgerBlue;
 }
+
