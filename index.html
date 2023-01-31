@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <head>
     <meta charset="UTF-8" />
-    <title>卒業制作</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/style.css" type="text/css" />
-    <!-- #include virtual="/ssi/meta.html" -->
+    <title>シンプル家計簿</title>
+    <link rel="stylesheet" href="./household_account_book.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- #include virtual="/ssi/header.html" -->
     <header>
-      <h1>金欠防止</h1>
-      <!-- #include file="/ssi/navigation.html" -->
-      <div class="navi-hamburger">
-        <div class="icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <!-- ナビボタン追加 -->
-      <div class="navi">
-        <!-- 五十嵐 -->
-        <div><a href="/index.html">ホーム</a></div>
-        <!-- 石崎 -->
-        <div><a href="/input/input_data.html">入力</a></div>
-        <!-- 鎌田 -->
-        <div><a href="/input/view_data.html">一覧</a></div>
-        <!-- 鈴木 -->
-        <div><a href="/icon/create_price_icon.html">アイコン制作</a></div>
-        <div><a href="/icon/icon_container.html">アイコンコンテイナー</a></div>
-        <!-- <div><a href="/create_icon_price.html">アイコン金額設定</a></div> -->
-        <!-- 李 -->
-        <div><a href="/calculation/calculation.html">買い物計算機</a></div>
-      </div>
-      <!-- ナビボタン追加 -->
+      <h1>シンプル家計簿</h1>
     </header>
 
-    <h2>sample</h2>
-    <section class="container">
-      <!--修正-->
+    <div>
+      <nav class="navi">
+        <!-- 五十嵐 -->
+        <a href="/index.html">ホーム</a>
+        <!-- 石崎 -->
+        <a href="/input/input_data.html">入力</a>
+        <!-- 鎌田 -->
+        <a href="/input/view_data.html">一覧</a>
+        <!-- 鈴木 -->
+        <a href="/icon/create_price_icon.html">アイコン制作</a>
+        <a href="/icon/icon_container.html">アイコンコンテイナー</a>
+        <!-- <div><a href="/create_icon_price.html">アイコン金額設定</a></div> -->
+        <!-- 李 -->
+        <a href="/calculation/calculation.html">買い物計算機</a>
+      </nav>
+    </div>
 
-      <!--修正-->
-    </section>
-
-    <section>
-      <!-- ここにグラフを表示します。 -->
-    </section>
-
-    <footer></footer>
+    <!-- 登録項目:日時,内容,金額 -->
+    <div id="regist_spending">
+      <h2>データ登録</h2>
+      <table id="regist_data_tb">
+        <tr>
+          <td>登録日付</td>
+          <td><input type="date" id="regist_date" /></td>
+        </tr>
+        <tr>
+          <td>登録内容</td>
+          <td><input type="text" id="regist_contents" required /></td>
+        </tr>
+        <tr>
+          <td>金額</td>
+          <td><input type="number" id="regist_price" min="1" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button id="regist_spending_btn">登録</button></td>
+        </tr>
+      </table>
+    </div>
+    <main>
+      <input type="date" id="start_date" />〜<input
+        type="date"
+        id="last_date"
+      /><button id="display_btn">指定期間表示</button>
+      <table id="hab_tb">
+        <tr>
+          <th>日付</th>
+          <th>内容</th>
+          <th>金額</th>
+        </tr>
+      </table>
+    </main>
   </body>
-
-  <script src="/js/common.js"></script>
 </html>
