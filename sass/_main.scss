@@ -5,7 +5,19 @@ h1 {
     margin: 0;
     padding: 0;
   }
+  h2 {
+  margin-top: 0;
+  text-shadow: 0px 0px 10px #ffffff;
+}
+header {
+  padding: 30px 0;
+  background-image: url("./images/header_bg_img.png");
+  background-repeat: no-repeat;
+}
 
+  main {
+    margin: 10px;
+  }
 body{
   margin: 0;
   background-color: white;
