@@ -6,28 +6,36 @@
     <title>シンプル家計簿</title>
     <link rel="stylesheet" href="./household_account_book.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js"></script>
+    <script src="js/"></script>
   </head>
   <body>
     <header>
-      <h1>シンプル家計簿</h1>
-    </header>
+      <h1>金欠防止</h1>
+      <!--▼ SP：ハンバーガーメニューボタン -->
+      <div class="global-nav-header">
+        <div class="global-nav-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <!--▲ SP：ハンバーガーメニューボタン -->
 
-    <div>
-      <nav class="navi">
-        <!-- 五十嵐 -->
-        <a href="/index.html">ホーム</a>
-        <!-- 石崎 -->
-        <!-- <a href="/input/input_data.html">入力</a> -->
-        <!-- 鎌田 -->
-        <!-- <a href="/input/view_data.html">一覧</a> -->
-        <!-- 鈴木 -->
-        <a href="/icon/create_price_icon.html">アイコン制作</a>
-        <!-- <a href="/icon/icon_container.html">アイコンコンテイナー</a> -->
-        <!-- <div><a href="/create_icon_price.html">アイコン金額設定</a></div> -->
-        <!-- 李 -->
-        <a href="/calculation/calculation.html">買い物計算機</a>
+      <!--▼ グローバルナビゲーション -->
+      <nav class="global-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a href="/icon/create_price_icon.html">アイコン制作</a>
+          </li>
+          <li class="nav-item">
+            <a href="/calculation/calculation.html">買い物計算機</a>
+          </li>
+        </ul>
       </nav>
-    </div>
+      <!--▲ グローバルナビゲーション -->
+    </header>
 
     <!-- 登録項目:日時,内容,金額 -->
     <div id="regist_spending">
