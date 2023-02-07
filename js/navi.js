@@ -27,3 +27,8 @@ $(".nav-item").on("click", function () {
     $(".nav-item").not($(this)).children(".nav-item_sub").slideUp();
   }
 });
+
+$("#hamburger").on("click", function () {
+  $(".icon").toggleClass("close");
+  $(".sm").slideToggle();
+});

@@ -38,15 +38,21 @@
     <div id="regist_spending">
       <h2>買い物計算機</h2>
       <section class="container">
-        <div style="font-size: 20px">予想金額</div>
-        <div style="" id="totalPriceView">0</div>
+        <div style="font-size: 20px">予想金額：</div>
+        <div id="totalPriceView">0</div>
         <div>
           <div>
             <input type="number" value="" id="inputPrice" />
+
             <div id="inputbtn">
-              <input type="button" value="0" id="0%" onclick="inputBtn(0)" />
-              <input type="button" value="8" id="8%" onclick="inputBtn(8)" />
-              <input type="button" value="10" id="10%" onclick="inputBtn(10)" />
+              <input type="button" value="0%" id="0%" onclick="inputBtn(0)" />
+              <input type="button" value="8%" id="8%" onclick="inputBtn(8)" />
+              <input
+                type="button"
+                value="10%"
+                id="10%"
+                onclick="inputBtn(10)"
+              />
             </div>
           </div>
         </div>

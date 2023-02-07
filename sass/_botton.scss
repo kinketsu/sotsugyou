@@ -29,6 +29,15 @@ button {
   margin-top: 10px;
   display: block;
 }
+.inputbtn {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  background: #005cff;
+  color: #ffffff;
+  border-bottom: solid 4px #5f5f5f;
+  border-radius: 3px;
+}
 
 #regist_spending_btn {
   width: 100%;
@@ -73,4 +82,18 @@ button {
 .edit_btn {
   padding: 3px 8px;
   border-radius: 4px;
+}
+
+#inputbtn input[type="button"] {
+  margin-left: 10px;
+  position: relative;
+  display: inline-block;
+  padding: 4px 8px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #005cff;
+  border: solid 1px #0f19a9;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
