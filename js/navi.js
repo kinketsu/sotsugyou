@@ -32,3 +32,5 @@ $("#hamburger").on("click", function () {
   $(".icon").toggleClass("close");
   $(".sm").slideToggle();
 });
+
+//平山 navi.js ↓
