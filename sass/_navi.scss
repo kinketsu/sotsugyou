@@ -1,3 +1,163 @@
-.navi {
+* {
+  box-sizing: border-box;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+p {
+  line-height: 1.7;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ベースレイアウト */
+.container {
+  margin: 40px auto;
+  position: relative;
+  width: 1200px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 auto 40px auto;
+    width: 90%;
+  }
+}
+
+/* グローバルメニュー */
+.global-nav {
+  margin: 0;
+  position: relative;
+}
+
+.global-nav .nav-list {
   display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.global-nav .nav-list .nav-item {
+  flex: 1;
+}
+
+.global-nav .nav-list .nav-item a {
+  border-right: 1px solid #ccc;
+  color: #333;
+  display: block;
+  padding: 0.6em 0.4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.global-nav .nav-list .nav-item:last-child a {
+  border-right: none;
+}
+
+/* サブナビゲーション */
+@media screen and (min-width: 768px) {
+  .nav-list {
+    position: relative;
+  }
+
+  // .nav-item_sub {
+  //   background: #ccc;
+  //   left: 0;
+  //   margin: 0 calc(50% - 50vw);
+  //   opacity: 0;
+  //   position: absolute;
+  //   top: 40px;
+  //   transition: all 0.2s ease;
+  //   visibility: hidden;
+  //   width: 100vw;
+  // }
+
+  // .nav-item_sub .inner {
+  //   display: flex;
+  //   margin: 0 auto;
+  //   width: 1200px;
+  // }
+
+  // .nav-item_sub .inner ul {
+  //   margin: 20px 20px 20px;
+  // }
+
+  // .global-nav .nav-list .nav-item_sub a {
+  //   text-align: left;
+  // }
+
+  .nav-item:hover .nav-item_sub {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* SP時：ハンバーガーメニューボタン */
+.global-nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .global-nav-header {
+    height: 50px;
+  }
+
+  .global-nav .nav-list {
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    left: 50%;
+    padding: 10px;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    
+  }
+
+  .global-nav .nav-list .nav-item a {
+    border-bottom: 1px solid #ccc;
+    border-right: none;
+    color: #fff;
+    padding: 1rem 1rem;
+    text-align: left;
+  }
+
+  .global-nav .nav-list .nav-item:last-child a {
+    border-bottom: none;
+  }
+
+  .global-nav-icon {
+    color: #999;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 28px;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  // .nav-item_sub {
+  //   display: none;
+  // }
+
+  .global-nav {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav-list {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }

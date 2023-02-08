@@ -1,132 +1,217 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>卒業制作</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/navi.js"></script>
+  </head>
+  <body>
     <header>
-        <h1>金欠防止</h1>
-        <div class="navi-hamburger">
-            <div class="icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div></div>
-        <!-- ナビボタン追加 -->
-        <div>
-            <nav class="navi" >
-                <!-- 五十嵐 -->
-                <div><a href="/index.html">ホーム</a></div>
-                <!-- 石崎 -->
-                <div><a href="/input/input_data.html">入力</a></div>
-                <!-- 鎌田 -->
-                <div><a href="/input/view_data.html">一覧</a></div>
-                <!-- 鈴木 -->
-                <div><a href="/icon/create_price_icon.html">アイコン制作</a></div>
-                <div><a href="/icon/icon_container.html">アイコンコンテイナー</a></div>
-                <!-- <div><a href="/create_icon_price.html">アイコン金額設定</a></div> -->
-                <!-- 李 -->
-                <div><a href="/calculation/calculation.html">買い物計算機</a></div>
-            </nav>
+      <h1>金欠防止</h1>
+      <!--▼ SP：ハンバーガーメニューボタン -->
+      <div class="global-nav-header">
+        <div class="global-nav-icon">
+          <i class="fas fa-bars"></i>
         </div>
-        <!-- ナビボタン追加 -->
+      </div>
+      <!--▲ SP：ハンバーガーメニューボタン -->
+
+      <!--▼ グローバルナビゲーション -->
+      <nav class="global-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a href="/icon/create_price_icon.html">アイコン制作</a>
+          </li>
+          <li class="nav-item">
+            <a href="/calculation/calculation.html">買い物計算機</a>
+          </li>
+        </ul>
+      </nav>
+      <!--▲ グローバルナビゲーション -->
     </header>
+    <div id="regist_spending">
+      <h2>アイコン制作</h2>
+      <section class="container">
+        <!--修正-->
+        <div class="inputWithIcon">
+          <input type="text" placeholder="登録名" />
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+        <button type="button">登録</button>
+        <div class="icon-create">
+          <input id="a" type="radio" value="a" name="image" />
+          <label for="a"
+            ><img src="img/food.jpeg" alt="料理" width="150" height="150"
+          /></label>
+          <input id="b" type="radio" value="b" name="image" />
+          <label for="b"
+            ><img src="img/address.jpeg" alt="連絡先" width="150" height="150"
+          /></label>
+          <input id="c" type="radio" value="c" name="image" />
+          <label for="c"
+            ><img src="img/bat.jpeg" alt="バット" width="150" height="150"
+          /></label>
+          <input id="d" type="radio" value="d" name="image" />
+          <label for="d"
+            ><img src="img/bath.jpeg" alt="風呂" width="150" height="150"
+          /></label>
+          <input id="e" type="radio" value="e" name="image" />
+          <label for="e"
+            ><img src="img/bed.jpeg" alt="ベット" width="150" height="150"
+          /></label>
+          <input id="f" type="radio" value="f" name="image" />
+          <label for="f"
+            ><img src="img/beer.jpeg" alt="ビール" width="150" height="150"
+          /></label>
+          <input id="g" type="radio" value="g" name="image" />
+          <label for="g"
+            ><img src="img/book.jpeg" alt="本" width="150" height="150"
+          /></label>
+          <input id="h" type="radio" value="h" name="image" />
+          <label for="h"
+            ><img src="img/cake.jpeg" alt="ケーキ" width="150" height="150"
+          /></label>
+          <input id="i" type="radio" value="i" name="image" />
+          <label for="i"
+            ><img src="img/camera.jpeg" alt="カメラ" width="150" height="150"
+          /></label>
+          <input id="j" type="radio" value="j" name="image" />
+          <label for="j"
+            ><img src="img/cap.jpeg" alt="カップ" width="150" height="150"
+          /></label>
+          <input id="k" type="radio" value="k" name="image" />
+          <label for="k"
+            ><img src="img/car.jpeg" alt="車" width="150" height="150"
+          /></label>
+          <input id="l" type="radio" value="l" name="image" />
+          <label for="l"
+            ><img
+              src="img/cardboard.jpeg"
+              alt="段ボール"
+              width="150"
+              height="150"
+          /></label>
+          <input id="m" type="radio" value="m" name="image" />
+          <label for="m"
+            ><img src="img/chess.jpeg" alt="チェス" width="150" height="150"
+          /></label>
+          <input id="n" type="radio" value="n" name="image" />
+          <label for="n"
+            ><img src="img/cock.jpeg" alt="コック" width="150" height="150"
+          /></label>
+          <input id="o" type="radio" value="o" name="image" />
+          <label for="o"
+            ><img
+              src="img/cycling.jpeg"
+              alt="サイクリング"
+              width="150"
+              height="150"
+          /></label>
+          <input id="p" type="radio" value="p" name="image" />
+          <label for="p"
+            ><img
+              src="img/data base.jpeg"
+              alt="データベース"
+              width="150"
+              height="150"
+          /></label>
+          <input id="q" type="radio" value="q" name="image" />
+          <label for="q"
+            ><img src="img/dog.jpeg" alt="犬" width="150" height="150"
+          /></label>
+          <input id="r" type="radio" value="r" name="image" />
+          <label for="r"
+            ><img src="img/dollar.jpeg" alt="お金の袋" width="150" height="150"
+          /></label>
+          <input id="s" type="radio" value="s" name="image" />
+          <label for="s"
+            ><img src="img/flask.jpeg" alt="フラスコ" width="150" height="150"
+          /></label>
+          <input id="t" type="radio" value="t" name="image" />
+          <label for="t"
+            ><img
+              src="img/game.jpeg"
+              alt="コントローラー"
+              width="150"
+              height="150"
+          /></label>
+          <input id="u" type="radio" value="u" name="image" />
+          <label for="u"
+            ><img src="img/globe.jpeg" alt="グローブ" width="150" height="150"
+          /></label>
+          <input id="v" type="radio" value="v" name="image" />
+          <label for="v"
+            ><img src="img/home.jpeg" alt="家" width="150" height="150"
+          /></label>
+          <input id="w" type="radio" value="w" name="image" />
+          <label for="w"
+            ><img src="img/medicine.jpeg" alt="薬" width="150" height="150"
+          /></label>
+          <input id="x" type="radio" value="x" name="image" />
+          <label for="x"
+            ><img src="img/pc.jpeg" alt="パソコン" width="150" height="150"
+          /></label>
+          <input id="y" type="radio" value="y" name="image" />
+          <label for="y"
+            ><img src="img/pen.jpeg" alt="ペン" width="150" heigh="150"
+          /></label>
+          <input id="z" type="radio" value="z" name="image" />
+          <label for="z"
+            ><img src="img/plane.jpeg" alt="飛行機" width="150" height="150"
+          /></label>
+          <input id="aa" type="radio" value="aa" name="image" />
+          <label for="aa"
+            ><img src="img/shopping.jpeg" alt="カート" width="150" height="150"
+          /></label>
+          <input id="ab" type="radio" value="ab" name="image" />
+          <label for="ab"
+            ><img src="img/shopping2.jpeg" alt="かご" width="150" height="150"
+          /></label>
+          <input id="ac" type="radio" value="ac" name="image" />
+          <label for="ac"
+            ><img src="img/sportsshoes.jpeg" alt="靴" width="150" height="150"
+          /></label>
+          <input id="ad" type="radio" value="ad" name="image" />
+          <label for="ad"
+            ><img src="img/subway.jpeg" alt="電車" width="150" height="150"
+          /></label>
+          <input id="ae" type="radio" value="ae" name="image" />
+          <label for="ae"
+            ><img
+              src="img/T-shirt.jpeg"
+              alt="Ｔシャツ"
+              width="150"
+              height="150"
+          /></label>
+          <input id="af" type="radio" value="af" name="image" />
+          <label for="af"
+            ><img src="img/tablet.jpeg" alt="携帯" width="150" height="150"
+          /></label>
+          <input id="ag" type="radio" value="ag" name="image" />
+          <label for="ag"
+            ><img src="img/tag.jpeg" alt="タグ" width="150" height="150"
+          /></label>
+          <input id="ah" type="radio" value="ah" name="image" />
+          <label for="ah"
+            ><img src="img/teeth.jpeg" alt="歯" width="150" height="150"
+          /></label>
+          <input id="ai" type="radio" value="ai" name="image" />
+          <label for="ai"
+            ><img src="img/tent.jpeg" alt="テント" width="150" height="150"
+          /></label>
+        </div>
+        <!--修正-->
+      </section>
+    </div>
+    <section><!-- ここにグラフを表示します。 --><!--wai---></section>
 
-        <h2>アイコン制作</h2>
-        <section class="container">
-            <!--修正-->
-            <div class="inputWithIcon">
-                <input type="text" placeholder="登録名">
-                <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-            </div>
-            <button type="button">登録</button>
-            <div class="icon-create">
+    <footer></footer>
+  </body>
 
-                <input id="a" type="radio" value="a" name="image">
-                <label for="a"><img src="img/food.jpeg" alt="料理" width="150" height="150"></label>
-                <input id="b" type="radio" value="b" name="image">
-                <label for="b"><img src="img/address.jpeg" alt="連絡先"width="150" height="150"></label>
-                <input id="c" type="radio" value="c" name="image">
-                <label for="c"><img src="img/bat.jpeg" alt="バット"width="150" height="150"></label>
-                <input id="d" type="radio" value="d" name="image">
-                <label for="d"><img src="img/bath.jpeg" alt="風呂"width="150" height="150"></label>
-                <input id="e" type="radio" value="e" name="image">
-                <label for="e"><img src="img/bed.jpeg" alt="ベット"width="150" height="150"></label>
-                <input id="f" type="radio" value="f" name="image">
-                <label for="f"><img src="img/beer.jpeg" alt="ビール"width="150" height="150"></label>
-                <input id="g" type="radio" value="g" name="image">
-                <label for="g"><img src="img/book.jpeg" alt="本"width="150" height="150"></label>
-                <input id="h" type="radio" value="h" name="image">
-                <label for="h"><img src="img/cake.jpeg" alt="ケーキ"width="150" height="150"></label>
-                <input id="i" type="radio" value="i" name="image">
-                <label for="i"><img src="img/camera.jpeg" alt="カメラ"width="150" height="150"></label>
-                <input id="j" type="radio" value="j" name="image">
-                <label for="j"><img src="img/cap.jpeg" alt="カップ"width="150" height="150"></label>
-                <input id="k" type="radio" value="k" name="image">
-                <label for="k"><img src="img/car.jpeg" alt="車"width="150" height="150"></label>
-                <input id="l" type="radio" value="l" name="image">
-                <label for="l"><img src="img/cardboard.jpeg" alt="段ボール"width="150" height="150"></label>
-                <input id="m" type="radio" value="m" name="image">
-                <label for="m"><img src="img/chess.jpeg" alt="チェス"width="150" height="150"></label>
-                <input id="n" type="radio" value="n" name="image">
-                <label for="n"><img src="img/cock.jpeg" alt="コック"width="150" height="150"></label>
-                <input id="o" type="radio" value="o" name="image">
-                <label for="o"><img src="img/cycling.jpeg" alt="サイクリング"width="150" height="150"></label>
-                <input id="p" type="radio" value="p" name="image">
-                <label for="p"><img src="img/data base.jpeg" alt="データベース"width="150" height="150"></label>
-                <input id="q" type="radio" value="q" name="image">
-                <label for="q"><img src="img/dog.jpeg" alt="犬"width="150" height="150"></label>
-                <input id="r" type="radio" value="r" name="image">
-                <label for="r"><img src="img/dollar.jpeg" alt="お金の袋"width="150" height="150"></label>
-                <input id="s" type="radio" value="s" name="image">
-                <label for="s"><img src="img/flask.jpeg" alt="フラスコ"width="150" height="150"></label>
-                <input id="t" type="radio" value="t" name="image">
-                <label for="t"><img src="img/game.jpeg" alt="コントローラー"width="150" height="150"></label>
-                <input id="u" type="radio" value="u" name="image">
-                <label for="u"><img src="img/globe.jpeg" alt="グローブ"width="150" height="150"></label>
-                <input id="v" type="radio" value="v" name="image">
-                <label for="v"><img src="img/home.jpeg" alt="家"width="150" height="150"></label>
-                <input id="w" type="radio" value="w" name="image">
-                <label for="w"><img src="img/medicine.jpeg" alt="薬"width="150" height="150"></label>
-                <input id="x" type="radio" value="x" name="image">
-                <label for="x"><img src="img/pc.jpeg" alt="パソコン"width="150" height="150"></label>
-                <input id="y" type="radio" value="y" name="image">
-                <label for="y"><img src="img/pen.jpeg" alt="ペン"width="150" heigh="150"></label>
-                <input id="z" type="radio" value="z" name="image">
-                <label for="z"><img src="img/plane.jpeg" alt="飛行機"width="150" height="150"></label>
-                <input id="aa" type="radio" value="aa" name="image">
-                <label for="aa"><img src="img/shopping.jpeg" alt="カート"width="150" height="150"></label>
-                <input id="ab" type="radio" value="ab" name="image">
-                <label for="ab"><img src="img/shopping2.jpeg" alt="かご"width="150" height="150"></label>
-                <input id="ac" type="radio" value="ac" name="image">
-                <label for="ac"><img src="img/sportsshoes.jpeg" alt="靴"width="150" height="150"></label>
-                <input id="ad" type="radio" value="ad" name="image">
-                <label for="ad"><img src="img/subway.jpeg" alt="電車"width="150" height="150"></label>
-                <input id="ae" type="radio" value="ae" name="image">
-                <label for="ae"><img src="img/T-shirt.jpeg" alt="Ｔシャツ"width="150" height="150"></label>
-                <input id="af" type="radio" value="af" name="image">
-                <label for="af"><img src="img/tablet.jpeg" alt="携帯"width="150" height="150"></label>
-                <input id="ag" type="radio" value="ag" name="image">
-                <label for="ag"><img src="img/tag.jpeg" alt="タグ"width="150" height="150"></label>
-                <input id="ah" type="radio" value="ah" name="image">
-                <label for="ah"><img src="img/teeth.jpeg" alt="歯"width="150" height="150"></label>
-                <input id="ai" type="radio" value="ai" name="image">
-                <label for="ai"><img src="img/tent.jpeg" alt="テント"width="150" height="150"></label>
-
-            </div>
-            <!--修正-->
-        </section>
-
-        <section>
-            <!-- ここにグラフを表示します。 --><!--wai--->
-        </section>
-
-    <footer>
-    </footer>
-</body>
-
-<script src="/js/common.js"></script>
+  <script src="/js/common.js"></script>
 </html>

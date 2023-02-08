@@ -1,89 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>卒業制作</title>
-    
-    <link rel="stylesheet" href="../css/style.css">
-    
-    <script src="js/calculation.js">
 
-    </script>
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="js/calculation.js"></script>
+    <script src="../js/navi.js"></script>
+  </head>
+  <body>
     <header>
-        <h1>金欠防止</h1>
-        <div class="navi-hamburger">
-            <div class="icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div></div>
-        <!-- ナビボタン追加 -->
-        <div>
-            <nav class="navi" >
-                <!-- 五十嵐 -->
-                <div><a href="/index.html">ホーム</a></div>
-                <!-- 石崎 -->
-                <div><a href="/input/input_data.html">入力</a></div>
-                <!-- 鎌田 -->
-                <div><a href="/input/view_data.html">一覧</a></div>
-                <!-- 鈴木 -->
-                <div><a href="/icon/create_price_icon.html">アイコン制作</a></div>
-                <div><a href="/icon/icon_container.html">アイコンコンテイナー</a></div>
-                <!-- <div><a href="/create_icon_price.html">アイコン金額設定</a></div> -->
-                <!-- 李 -->
-                <div><a href="/calculation/calculation.html">買い物計算機</a></div>
-            </nav>
+      <h1>金欠防止</h1>
+      <!--▼ SP：ハンバーガーメニューボタン -->
+      <div class="global-nav-header">
+        <div class="global-nav-icon">
+          <i class="fas fa-bars"></i>
         </div>
-        <!-- ナビボタン追加 -->
+      </div>
+      <!--▲ SP：ハンバーガーメニューボタン -->
+
+      <!--▼ グローバルナビゲーション -->
+      <nav class="global-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a href="/icon/create_price_icon.html">アイコン制作</a>
+          </li>
+          <li class="nav-item">
+            <a href="/calculation/calculation.html">買い物計算機</a>
+          </li>
+        </ul>
+      </nav>
+      <!--▲ グローバルナビゲーション -->
     </header>
+    <div id="regist_spending">
+      <h2>買い物計算機</h2>
+      <section class="container">
+        <div style="font-size: 20px">予想金額：</div>
+        <div id="totalPriceView">0</div>
+        <div>
+          <div>
+            <input type="number" value="" id="inputPrice" />
 
-        <h2>買い物計算機</h2>
-        <section class="container">
-            <!--修正-->
-            <div id="viewAllPrice" >
-                <span>5000</span>
+            <div id="inputbtn">
+              <input type="button" value="0%" id="0%" onclick="inputBtn(0)" />
+              <input type="button" value="8%" id="8%" onclick="inputBtn(8)" />
+              <input
+                type="button"
+                value="10%"
+                id="10%"
+                onclick="inputBtn(10)"
+              />
             </div>
-            <div>
-                <input type="number" value="" id="inputPrice">
-                <select name="example" id="pText">
-                    <option value="0">0%</option>
-                    <option value="8">8%</option>
-                    <option value="10">10%</option>
-                </select>
-                <input type="button" value="入力" onclick="inputBtn()">
-            </div>
-            <div>
-                
-            </div>
-            <table id="viewPrice">
-                <tbody>
-                    <tr>
-                        <td>2000</td>
-                        <td><button>削除</button></td>
-                    </tr>
-                    <tr>
-                        <td>1000</td>
-                        <td><button>削除</button></td>
-                    </tr>
-                    <tr>
-                        <td>2000</td>
-                        <td><button>削除</button></td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--修正-->
-        </section>
+          </div>
+        </div>
+        <div id="priceDataView"></div>
+        <!--修正-->
+      </section>
+    </div>
+    <section>
+      <!-- ここにグラフを表示します。 -->
+    </section>
 
-        <section>
-            <!-- ここにグラフを表示します。 -->
-        </section>
+    <footer></footer>
+  </body>
 
-    <footer>
-    </footer>
-</body>
-
-<script src="/js/common.js"></script>
-
+  <script src="/js/common.js"></script>
 </html>
