@@ -13,8 +13,63 @@
       
     </header>
     <section class="container">
-
+      
     </section>
   </body>
+    <div class="button" onclick="selectShort()">家計簿計算</div>
+    <div id="soto"></div>
+  </body>
+  <script>
+  const shortText = "家計簿計算";
+  const longText = "家計簿計算（サンプルお題）";
+  const textElem = document.getElementById("soto");
+ 
+  function selectShort() {
+    textElem.innerText = shortText;
+    resize();
+  }
+ 
+  function selectLong() {
+    textElem.innerText = longText;
+    resize();
+  }
+ 
+  function resize() {
+   
+    textElem.removeAttribute('style');
+    console.log(textElem.getBoundingClientRect().height , textElem.scrollHeight);
+    for (
+      let size = 30;
+      textElem.getBoundingClientRect().height　< textElem.scrollHeight && size > 10;
+      size -= 3
+      
+    ) {
+      textElem.style.fontSize = size + "px";
+    
+    }
+  }
 
+  selectShort();
+  window.addEventListener('resize', () => {
+    resize();
+  });
+ 
+  </script>
+  <style>
+  .button {
+    width: 100px;
+    margin: 8px;
+    padding: 8px;
+    font-size: 24px;
+    background-color: #ff8900;
+  }
+ 
+  #soto {
+    width: 90%;
+    height: 216px;
+    font-size: 30px;
+    border: 3px solid #ff8900;
+    padding:8px;
+  }
+  </style>
 </html>
