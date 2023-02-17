@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>サンプル</title>
+  </head>
+  <body>
+    <p>サンプルページです。</p>
+
+    <div>
+      <div class="inputWithIcon">
+        <input
+          id="inputIconName"
+          type="text"
+          placeholder="登録名"
+          value="text"
+        />
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <button type="button" value="Check" id="inputButton">登録</button>
+      <div class="icon-create" value="iconImage">
+        <input id="food" type="radio" value="food" name="iconImage" />
+        <label for="food"
+          ><img src="img/food.jpeg" alt="料理" width="150" height="150"
+        /></label>
+    </div>
+
+    <div>
+      <input type="button" value="Check" id="checkButton" />
+    </div>
+
+    <script>
+      function butotnClick() {
+        let checkValue = "";
+
+        for (let i = 0; i < len; i++) {
+          if (iconRadio.item(i).checked) {
+            checkValue = iconRadio.item(i).value;
+          }
+        }
+        console.log("選択されているのは " + checkValue + " です");
+      }
+
+      let iconRadio = document.getElementsByName("iconImage");
+      let len = iconRadio.length;
+      iconRadio[0].checked = true;
+
+      let inputButton = document.getElementById("inputButton");
+      inputButton.addEventListener("click", butotnClick);
+    </script>
+  </body>
+</html>

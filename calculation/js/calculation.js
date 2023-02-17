@@ -43,6 +43,9 @@ function addPriceElement(price) {
     }
   });
   priceElement.appendChild(deletePrice);
+  if (price === 0) {
+    alert("ero");
+  }
 }
 
 //合計結果表示と更新：priceElementの合計とremove処理の時値の差額処理

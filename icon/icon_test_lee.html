@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>卒業制作</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/navi.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>金欠防止</h1>
+      <!--▼ SP：ハンバーガーメニューボタン -->
+      <div class="global-nav-header">
+        <div class="global-nav-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <!--▲ SP：ハンバーガーメニューボタン -->
+
+      <!--▼ グローバルナビゲーション -->
+      <nav class="global-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a href="/icon/create_price_icon.html">アイコン制作</a>
+          </li>
+          <li class="nav-item">
+            <a href="/calculation/calculation.html">買い物計算機</a>
+          </li>
+        </ul>
+      </nav>
+      <!--▲ グローバルナビゲーション -->
+    </header>
+    <div id="regist_spending">
+      <h2>アイコン制作</h2>
+      <section class="container">
+        <!--修正-->
+        <div class="inputWithIcon">
+          <input
+            id="inputIconName"
+            type="text"
+            placeholder="登録名"
+            value="text"
+          />
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+        <button type="button" value="Check" id="inputButton">登録</button>
+        <div class="icon-create" value="iconImage">
+          <input id="food" type="radio" value="food" name="iconImage" />
+          <label for="food"
+            ><img src="img/food.jpeg" alt="料理" width="150" height="150"
+          /></label>
+        </div>
+        <!--修正-->
+      </section>
+    </div>
+    <section><!-- ここにグラフを表示します。 --><!--wai---></section>
+
+    <footer></footer>
+  </body>
+
+  <script src="/js/common.js"></script>
+  <script src="icon_test_lee.html"></script>
+</html>
