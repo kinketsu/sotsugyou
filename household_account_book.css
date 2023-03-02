@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 #regist_spending {
   padding: 10px;
   background-image: url("./images/regist_spending_back.png");
