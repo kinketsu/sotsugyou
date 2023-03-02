@@ -5,8 +5,8 @@ var con = mysql.createConnection({
 
   user: "root",
 
-  password: "
-  autoset",
+  password: "root",
+  autoset: "",
 
   database: "icon-test",
 });
