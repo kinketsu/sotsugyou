@@ -22,5 +22,16 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "files.autoGuessEncoding": true,
+
+  "window.zoomLevel": -1,
+
+  "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe",
+
+  "C_Cpp.updateChannel": "Insiders",
+
+  "php.validate.executablePath": "‪C:/xampp/php/php.exe",
+
+  "files.associations": { "*.html": "php" }
 }

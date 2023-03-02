@@ -5,6 +5,8 @@
     <title>卒業制作</title>
 
     <link rel="stylesheet" href="../css/style.css" />
+    
+
     <script src="../js/navi.js"></script>
   </head>
   <body>
@@ -34,29 +36,31 @@
       </nav>
       <!--▲ グローバルナビゲーション -->
     </header>
-    <div id="regist_spending">
-      <h2>アイコン制作</h2>
-      <section class="container">
-        <!--修正-->
-        <div class="inputWithIcon">
-          <input
-            id="inputIconName"
-            type="text"
-            placeholder="登録名"
-            value="text"
-          />
-          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-        </div>
-        <button type="button" value="Check" id="inputButton">登録</button>
-        <div class="icon-create" value="iconImage">
-          <input id="food" type="radio" value="food" name="iconImage" />
-          <label for="food"
-            ><img src="img/food.jpeg" alt="料理" width="150" height="150"
-          /></label>
-        </div>
-        <!--修正-->
-      </section>
-    </div>
+    <form action="/php/check.php" method="post">
+      <div id="regist_spending">
+        <h2>アイコン制作</h2>
+        <section class="container">
+          <!--修正-->
+          <div class="inputWithIcon">
+            <input
+              id="inputIconName"
+              type="text"
+              placeholder="登録名"
+              name="iconName"
+            />
+            <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+          </div>
+          <button type="button" value="Check" id="inputButton">登録</button>
+          <div class="icon-create" value="iconType">
+            <input id="food" type="radio" value="food" name="iconType" />
+            <label for="food"
+              ><img src="img/food.jpeg" alt="料理" width="150" height="150"
+            /></label>
+          </div>
+          <!--修正-->
+        </section>
+      </div>
+    </form>
     <section><!-- ここにグラフを表示します。 --><!--wai---></section>
 
     <footer></footer>
